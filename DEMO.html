@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.4;
+        }
+
+        .cv-container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-height: 297mm;
+            position: relative;
+        }
+
+        .orange-bar {
+            width: 8px;
+            height: 100%;
+            background-color: #ff6b35;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .content {
+            padding: 40px 40px 40px 60px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+
+        .job-title {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .contact-info {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .contact-info div {
+            margin-bottom: 3px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .summary-text {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+
+        .experience-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .experience-company {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .experience-date {
+            font-size: 12px;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        .experience-description {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .experience-points {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.5;
+            margin-left: 0;
+            padding-left: 15px;
+        }
+
+        .experience-points li {
+            margin-bottom: 3px;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+
+        .education-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .education-institution {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .education-date {
+            font-size: 12px;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        .education-description {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .skills-text {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .cv-container {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                height: 100vh;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 30px 30px 30px 50px;
+            }
+            
+            .name {
+                font-size: 28px;
+            }
+            
+            .experience-header,
+            .education-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .experience-date,
+            .education-date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="orange-bar"></div>
+        <div class="content">
+            <header class="header">
+                <h1 class="name">YOUR NAME</h1>
+                <p class="job-title">JOB TITLE</p>
+                <div class="contact-info">
+                    <div>123 Your Street, Your City AB12 3CD</div>
+                    <div>📞 (0123) 456 7890 ✉️ yourname@email.co.uk</div>
+                </div>
+            </header>
+
+            <section class="section">
+                <h2 class="section-title">SUMMARY</h2>
+                <p class="summary-text">
+                    Click or tap here to edit text. The summary section of your CV should be a brief summary of your 
+                    experience, qualifications, and skills. It allows employers to quickly learn about you and your 
+                    suitability for the role.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">EXPERIENCE</h2>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Job Title</h3>
+                            <p class="experience-company">Company, City</p>
+                        </div>
+                        <div class="experience-date">Jan 2023 - Jan 2023</div>
+                    </div>
+                    <p class="experience-description">
+                        Click or tap here to edit text. List jobs in order of most recent first. Include any relevant work experience 
+                        or voluntary work.
+                    </p>
+                    <ul class="experience-points">
+                        <li>Include key achievements, tasks, and projects.</li>
+                        <li>Include important keywords taken from job advert.</li>
+                        <li>Include figures if you can.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Job Title</h3>
+                            <p class="experience-company">Company, City</p>
+                        </div>
+                        <div class="experience-date">Jan 2023 - Jan 2023</div>
+                    </div>
+                    <p class="experience-description">
+                        Click or tap here to edit text. Provide evidence to support any claims you make. For example, if you write 
+                        'excellent interpersonal skills' then support this by adding 'as demonstrated when chosen to meet and 
+                        greet clients'.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">EDUCATION</h2>
+                
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <h3 class="education-title">BSc Degree Title (2:1)</h3>
+                            <p class="education-institution">University Name, City</p>
+                        </div>
+                        <div class="education-date">Jan 2023 - Jan 2023</div>
+                    </div>
+                    <p class="education-description">
+                        Final year project: 'Study and Analysis of Subject'.
+                    </p>
+                </div>
+
+                <div class="education-item">
+                    <p class="education-description">
+                        Click or tap here to edit text. If a student or recent graduate you can place education section above 
+                        experience. Include any relevant academic achievements, research, extracurricular activities, projects, 
+                        or coursework.
+                    </p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <h3 class="education-title">GCSE and A Level</h3>
+                            <p class="education-institution">School Name, City</p>
+                        </div>
+                        <div class="education-date">Jan 2023 - Jan 2023</div>
+                    </div>
+                    <p class="education-description">
+                        8 x GCSEs grade C or above, including Maths and English.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">SKILLS</h2>
+                <p class="skills-text">Microsoft Word • Microsoft PowerPoint</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

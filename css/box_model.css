@@ -1,0 +1,42 @@
+div{
+    width: calc(25% - 30px); /*300px*/
+    float: left;/* left; right*/
+    margin: 15px;/* theo chiều kim đồng hồ, và các cạnh đối diện*//*tạo khoảng cách giữ các phần tử với nhau*/
+    /*margin-top:
+    margin-right:
+    margin-bottom:
+    margin-left:*/
+
+   /* border: 1px solid red;*/
+   box-shadow: 5px 10px 15px red;/*x1= trái phải,y1= trên dưới,z1= độ nhòe*/
+   border-radius: 10px;
+    /*transform: translate(20px,150px);*/ dịch chuyển khung
+    /*transform: rotate(45deg);*/ xoay khung
+    /*transform: scale(1.5)*/phóng khung
+
+    /*border-top:
+    border-bottom:
+    border-left:
+    border-right: */
+    padding: 20px;/*tạo khoảng cách từ lề vào nội dung*/
+    /*padding-top:
+    padding-bottom:
+    padding-left:
+    padding-right: */
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+div:hover{
+    transform:rotate(10deg);
+    transition: all 500ms;
+    background-color: aquamarine;
+}
+#special{
+    background-color: pink;
+}
+.linda{
+    background-color: rgb(157, 97, 214);
+}

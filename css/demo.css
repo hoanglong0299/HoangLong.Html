@@ -1,0 +1,27 @@
+selector{ property:value;}
+
+h1{
+    color: red
+}
+
+p{ 
+    color: #05b646;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: right;/*left, right, cnter,justify*/
+    font-family: ;
+    font-weight: ;
+    font-family: "Rubik", sans-serif;
+    text-decoration: ;/*underline,line-through,overline,none*/
+    text-transform: ;/*uppercase,lowercase,capitalize,none*/
+    width:px;
+    font-style: italic;
+    word-spacing: px;
+    background-color: #d9e711;
+    border-bottom: 2px solid red;
+   
+}
+body{
+     background-image: url("../images/cho-chihuahua.jpg");
+     background-size: cover;
+}

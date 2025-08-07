@@ -10,7 +10,7 @@ div{
    /* border: 1px solid red;*/
    box-shadow: 5px 10px 15px red;/*x1= trái phải,y1= trên dưới,z1= độ nhòe*/
    border-radius: 10px;
-    /*transform: translate(20px,150px);*/ dịch chuyển khung
+    /*transform: translate(20px,150px);*// dịch chuyển khung
     /*transform: rotate(45deg);*/ xoay khung
     /*transform: scale(1.5)*/phóng khung
 

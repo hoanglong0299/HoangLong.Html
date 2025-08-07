@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Menu</title>
+    <link rel="stylesheet" href="css/demomenu.css"/>
+
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="item" id="item-1" onmouseenter="openMenu(1)" onmouseleave="closeMenu(1)">
+                <a href="#"> Tin Tức</a>
+                <ul class="submenu">
+                    <li>Chính trị - Xã hội</li>
+                    <li>Tra cứu thông tin</li>
+                </ul>
+            </li>
+            <li class="item" id="item-2" onmouseenter="openMenu(2)" onmouseleave="closeMenu(2)">
+                <a href="#"> Bóng Đá</a>
+                <ul class="submenu">
+                    <li>Tỉ số</li>
+                    <li>Tra cứu kết quả</li>
+                </ul>
+            </li>
+            <li class="item" id="item-3" onmouseenter="openMenu(3)" onmouseleave="closeMenu(3)">
+                <a href="#"> Kinh Doanh</a>
+                <ul class="submenu">
+                    <li>Giá vàng</li>
+                    <li>Tỉ lệ </li>
+                </ul>
+            </li>
+            <li class="item" id="item-4" onmouseenter="openMenu(4)" onmouseleave="closeMenu(4)">
+                <a href="#"> Giải Trí</a>
+                <ul class="submenu">
+                    <li>Truyện cười</li>
+                    <li>Hài kịch</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+        <script type="text/javascript">
+            function openMenu(n){
+                var item = document.getElementById("item-"+n);
+                item.classList.add("active");
+            }
+
+            function closeMenu(n){
+                var item = document.getElementById("item-"+n);
+                item.classList.remove("active");
+            }
+        </script>
+</body>
+</html>

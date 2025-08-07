@@ -1,0 +1,10 @@
+
+{
+    "name": "Chó phốc lợn",
+    "price": 250000,
+    "qty": 10,
+    "thumbnail":"images/cho-chihuahua.jpg",
+    "review": {
+        "rating":5
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onlyFan</title>
+</head>
+<body>
+
+    <div class="fan-box">
+        <img id="fan" src="/images/canh-quat-hatari-25-inch.png" width="400"/>
+    </div>
+    
+    <div class="control">
+        <button onclick="speed0();" type="button">OFF</button>
+        <button onclick="speed1();" type="button">Speed 1</button>
+        <button onclick="speed2();" type="button">Speed 2</button>
+        <button onclick="speed3();" type="button">Speed 3</button>
+        <button onclick="swing();" type="button">Swing</button>
+    </div>
+
+
+    <script type="text/javascript">
+        var dg=0;
+        var speed =0;
+        var fan = setInterval(function(){
+            dg+= speed;
+            var f = document.getElementById("fan");
+            f.style.transform = `rotate(${dg}deg)`;
+            if(dg==360){
+                dg = 0;
+            }
+        },40);
+        
+        function speed0(){
+            speed= 0;
+        }
+        function speed1(){
+            speed = 15;
+        }
+        function speed2(){
+            speed = 30;
+        }
+        function speed3(){
+            speed = 60;
+        }
+
+    </script>
+</body>
+</html>

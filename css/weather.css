@@ -1,0 +1,81 @@
+body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #282c34; /* Nền tối giống ảnh */
+            margin: 0;
+            color: #ffffff; /* Chữ trắng */
+        }
+
+        .weather-widget {
+            background-color: #1e1e1e; /* Nền widget tối hơn */
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .main-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .weather-icon {
+            width: 80px;
+            height: 80px;
+            filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.5)); /* Thêm bóng nhẹ cho icon */
+        }
+
+        .temperature-value {
+            font-size: 80px;
+            font-weight: bold;
+            display: flex;
+            align-items: baseline;
+            line-height: 1; /* Đảm bảo căn chỉnh tốt */
+        }
+
+        .temperature-value .unit {
+            font-size: 0.4em; /* Kích thước nhỏ hơn cho đơn vị */
+            vertical-align: super; /* Đặt đơn vị lên trên */
+            margin-left: 5px;
+            font-weight: normal;
+        }
+
+        .temperature-value .temp-separator {
+            font-size: 0.8em;
+            margin: 0 5px;
+            color: #666; /* Màu xám cho dấu phân cách */
+        }
+
+        .details p {
+            margin: 8px 0;
+            font-size: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .weather-widget {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .main-info {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .temperature-value {
+                font-size: 60px;
+            }
+
+            .details p {
+                font-size: 18px;
+                text-align: center;
+            }
+        }

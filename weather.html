@@ -7,14 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="stylesheet" href="css/weather.css"/>
 </head>
 <body>
-        <main class="section main">
-        <div class="container">
+        <main class="weather-widget">
+        <div class="main-info">
             <input  id="city" name="City" onkeyup="searchWeather()"  placeholder="Enter your city"/>
             <br/>
-            <img id="icon" src="#"/>
+            <img id="weather-icon" src="#"/>
             <h2>Temp: <span id="temp"> 30</span>°C|°F</h2>
             <p>Feels like:<span id="feels_like"></span>°C</p>
             <p>Humidity: <span id="humd">50</span>%</p>
@@ -36,7 +36,7 @@
             document.getElementById("wind").innerText= rs.wind.speed;
             for (var i =0;i<rs.weather.length;i++){
                 var icon = rs.weather[i].icon;
-                document.getElementById("icon").src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+                document.getElementById("weather-icon").src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
             }
             
         })
